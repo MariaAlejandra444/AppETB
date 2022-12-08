@@ -1,0 +1,31 @@
+<ion-header>
+</ion-header>
+
+<ion-content class="background">
+
+  <ion-card class="cardconteudo">
+  </ion-card>
+    <ion-card-header>
+      <ion-icon name="logo-facebook" class="logo1"></ion-icon>
+      <ion-icon name="logo-google" class="logo2"></ion-icon>
+      <ion-icon name="logo-twitter" class="logo3"></ion-icon>
+      <ion-icon name="key" class="logo4"></ion-icon>
+      <ion-icon name="person" class="logo5"></ion-icon>
+      <ion-text>
+        <h1 style="font-size: 50px" color="ligth" class="title">ETB</h1>
+      </ion-text>
+      <h1 style="font-size: 30px" color="ligth" class="subtitle">Encourage de best</h1>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="formularioLogin">
+        <ion-item class="form" type="color" value="#ffffff">
+          <ion-input  color="ligth" placeholder="Usuario" formControlName="nombre"></ion-input>
+        </ion-item>
+        <ion-item class="form1" type="color" value="#ffffff">
+          <ion-input  color="ligth" placeholder="Contraseña" formControlName="nombre"></ion-input>
+        </ion-item>
+      </form>
+    </ion-card-content>
+ 
+
+</ion-content>

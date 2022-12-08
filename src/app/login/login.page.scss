@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+ion-content.background{
+    --background: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg') 0 0/100% 100% no-repeat;
+}
+
+.cardconteudo {
+    background-color: rgb(192, 192, 192);
+    justify-content: center;
+    position: absolute;
+    top: 180px; left: 30px;
+    width: 75%;
+    height: 50%;
+    opacity: 0.5;
+}
+
+.title {
+    opacity: 1;
+    position: absolute;
+    top: 200px; left: 60px;
+}
+
+.subtitle {
+    opacity: 1;
+    position: absolute;
+    top: 250px; left: 60px;
+}
+
+.form {
+    opacity: 1;
+    position: absolute;
+    top: 310px; left: 80px;
+    width: 60%;
+    height: 170%;
+    --ion-item-background: #ffffff;
+    --ion-text-color: #0c0c0c;
+}
+
+.form1 {
+    opacity: 1;
+    position: absolute;
+    top: 370px; left: 80px;
+    width: 60%;
+    height: 170%;
+    --ion-item-background: #ffffff;
+    --ion-text-color: #0c0c0c;
+}
+
+.logo1 {
+	color: rgba(255, 238, 0, 0.904) !important;
+    position: absolute;
+    top: 180px; left: 140px;
+    width: 50%;
+    height: 100%;
+}
+
+.logo2 {
+	color: rgba(255, 238, 0, 0.904) !important;
+    position: absolute;
+    top: 180px; left: 175px;
+    width: 50%;
+    height: 100%;
+}
+
+.logo3 {
+	color: rgba(255, 238, 0, 0.904) !important;
+    position: absolute;
+    top: 180px; left: 210px;
+    width: 50%;
+    height: 100%;
+}
+
+.logo4 {
+	color: rgba(255, 238, 0, 0.904) !important;
+    position: absolute;
+    top: 410px; left: -30px;
+    width: 50%;
+    height: 100%;
+}
+.logo5 {
+	color: rgba(255, 238, 0, 0.904) !important;
+    position: absolute;
+    top: 350px; left: -30px;
+    width: 50%;
+    height: 100%;
+}
