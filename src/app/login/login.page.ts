@@ -6,6 +6,7 @@ import {
   FormBuilder
 } from '@angular/forms'
 
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -13,14 +14,19 @@ import {
 })
 export class LoginPage implements OnInit {
 
-  formularioLogin: FormGroup;
+
+  ionicForm: FormGroup;
 
   constructor(public fb: FormBuilder) {
-    this.formularioLogin = this.fb.group({
+    this.ionicForm = this.fb.group({
       'nombre': new FormControl("",Validators.required),
       'password': new FormControl("",Validators.required)
     })
 
+  }
+
+  submitForm() {
+    console.log(this.ionicForm.value)
   }
 
   ngOnInit() {
