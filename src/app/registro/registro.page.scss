@@ -6,13 +6,13 @@ ion-content.background{
 }
 .caja-registro {
     
-    display: flex;
-    opacity: 70%;
-   
-    flex-direction: column;
-    justify-content: center;
-    margin: auto 5em;
-  
+  background-color: rgb(192, 192, 192);
+  justify-content: center;
+  position: absolute;
+  top: 1px; left: -5px;
+  width: 250px;
+  height: 400px;
+  opacity: 0.5;
 
   }
   
@@ -20,14 +20,74 @@ ion-content.background{
     display: flex;
     margin-top: 1em;
     justify-content: center;
+    position: absolute;
+    top: 300px; left: 20px;
+    width: 235px;
+    height: 420px;
+    opacity:1;
   }
   
   
-  ion-button {
+  .boton{
     --background: #a64d79;
     margin-top: 1em;
+    position: absolute;
+    top: 170px; left: 90px;
+  }
+
+  .boton1{
+    --background: #686667;
+    color: rgb(14, 13, 13); //Color de letra
+    font-family: "serif";
+    margin-top: 1em;
+    position: absolute;
+    top: 250px; left: 10px;
+    height: 42px;
+    width: 230px;
   }
   ion-card-title {
     --color: black;
 
   }
+
+  .tituloR {
+    color: #030005 !important;
+    opacity: 1;
+    position: absolute;
+    top: 20px; left: 50px;
+    
+}
+
+.input1 {
+  --ion-item-background: #ffffff;
+  --ion-text-color: #0c0c0c;
+  position: absolute;
+  top: 25px; left: 10px;
+  width: 240px;
+  height: 30px;
+}
+
+.input2 {
+  --ion-item-background: #ffffff;
+  --ion-text-color: #0c0c0c;
+  position: absolute;
+  top: 65px; left: 10px;
+  width: 240px;
+  height: 30px;
+}
+.input3 {
+  --ion-item-background: #ffffff;
+  --ion-text-color: #0c0c0c;
+  position: absolute;
+  top: 105px; left: 10px;
+  width: 240px;
+  height: 30px;
+}
+.input4 {
+  --ion-item-background: #ffffff;
+  --ion-text-color: #0c0c0c;
+  position: absolute;
+  top: 145px; left: 10px;
+  width: 240px;
+  height: 30px;
+}

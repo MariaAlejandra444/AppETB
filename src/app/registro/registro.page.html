@@ -8,40 +8,39 @@
   
   <!--Caja de registro-->
   <ion-card color="light" class="caja-registro">
+  </ion-card>
     <ion-card-header>
-      <ion-card-title>Crear una cuenta</ion-card-title>
+      <ion-card-title  class="tituloR">Crear una cuenta</ion-card-title>
     </ion-card-header>
     <ion-card-content class="content">
-      <form action="">
-        <ion-item>
-          <ion-label>Nombre</ion-label>
-          <ion-input></ion-input>
+      <form [formGroup]="ionicForm" (ngSubmit)="submitForm()">
+        <ion-icon name="contact" class="icono1"></ion-icon>
+        <ion-item type="color" value="#ffffff" class="input1" >
+            <ion-input color="ligth" placeholder="Nombre" formControlName="nombre"></ion-input>
         </ion-item>
-        <ion-item>
-          <ion-label >Apellido</ion-label>
-          <ion-input></ion-input>
+        <ion-item type="color" value="#ffffff" class="input2" >
+          <ion-input color="ligth" placeholder="Apellido" formControlName="apellido"></ion-input>
         </ion-item>
-        <ion-item >
-          <ion-label>Email</ion-label>
-          <ion-input></ion-input>
+        <ion-item type="color" value="#ffffff" class="input3" >
+          <ion-input color="ligth" placeholder="Email" formControlName="email"></ion-input>
         </ion-item>
-        <ion-item >
-          <ion-label >Contraseña</ion-label>
-          <ion-input></ion-input>
+        <ion-item type="color" value="#ffffff" class="input4" >
+          <ion-input color="ligth" placeholder="Contraseña" formControlName="contrasena"></ion-input>
         </ion-item>
-        <ion-button >Sign Up</ion-button>
+        <ion-button type="submit" class ="boton">Sign Up</ion-button>
       </form>
-
-      <ion-text class="extra-options">
-        By signing up, you agree with the 
-        <a>Terms of Service</a> and <a> Privacy Policy </a>
-      </ion-text>
-      <ion-button >Already have an account? 
-        <a [routerLink]= "['/app/login']" > Sign in</a>
-      </ion-button>
-       
     </ion-card-content>
-  </ion-card>
+
+    <ion-text class="extra-options">
+      <h3 style="font-size: 15px" color="ligth" class="registro"> By signing up, you agree with the <ion-router-link color="secondary" [routerLink]="['/registro']">Terms </ion-router-link>
+        and <ion-router-link color="secondary" [routerLink]="['/olvidoC']">Privacy</ion-router-link> you agree with the <ion-router-link color="secondary" [routerLink]="['/olvidoC']">Terms of Service</ion-router-link>
+      and <ion-router-link color="secondary" [routerLink]="['/olvidoC']">Privacy Policy</ion-router-link></h3>
+    </ion-text>
+      <ion-button class="boton1" [routerLink]="['/login']">Already have an account?
+      </ion-button>
+        
+ 
+
 
 </ion-content>
 
