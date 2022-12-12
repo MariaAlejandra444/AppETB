@@ -15,6 +15,14 @@ const routes: Routes = [
     path: 'registro',
     loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
   },
+  {
+    path: 'olvidoC',
+    loadChildren: () => import('./olvidoC/olvidoC.module').then( m => m.OlvidoCPageModule)
+  },
+  {
+    path: 'mainJuego',
+    loadChildren: () => import('./mainJuego/mainJuego.module').then( m => m.MainJuegoPageModule)
+  },
 ];
 
 @NgModule({
