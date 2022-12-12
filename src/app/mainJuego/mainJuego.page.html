@@ -1,0 +1,71 @@
+<ion-app>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-title> Main Juego</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-list>
+        <ion-menu-toggle autoHide="false" >
+          <ion-item [routerLink]="['/registro']" class="item-background-color" >
+            <ion-label style="font-size: 20px">
+              Home
+            </ion-label>
+          </ion-item>
+          <ion-item [routerLink]="['/login']">
+            <ion-label style="font-size: 20px">
+              Herramienta de consulta
+            </ion-label>
+          </ion-item>
+          <ion-item [routerLink]="['/login']">
+            <ion-label style="font-size: 20px">
+              Regresar a la página principal
+            </ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title >Encourage the best-ETB</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    
+    <ion-content class="background ion-padding" [fullscreen]="true" >
+  
+      <!--Caja de registro-->
+      <ion-card color="light" class="caja-registro">
+        <ion-card-header>
+          <ion-card-title>Bienvenido a ETB</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-item>
+            <ion-text>
+              En esta pagina encontraras algunos 
+              <a href="">Juegos</a> y acceso a la <a href="">Herramienta de Consulta</a> con los cuales puedes reforzar tús habilidades.
+            </ion-text>  
+          </ion-item>
+         
+          <ion-button > Iniciar Juego  </ion-button>
+           
+        </ion-card-content>
+      </ion-card>
+    
+    </ion-content>
+  
+    <ion-footer>
+      <ion-toolbar>
+        <ion-title>
+          Footer
+        </ion-title>
+      </ion-toolbar>
+    </ion-footer> 
+  </div>
+  
+</ion-app>
