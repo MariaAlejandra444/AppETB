@@ -5,7 +5,13 @@ ion-content.background{
 }
 
 .caja-olvidoC {
-    opacity: 70%;
+    background-color: rgb(192, 192, 192);
+    justify-content: center;
+    position: absolute;
+    top: 30px; left: 10px;
+    width: 240px;
+    height: 300px;
+    opacity: 0.5;
   
 }
 
@@ -13,3 +19,39 @@ ion-button {
     --background: #a64d79;
     margin-top: 1em;
   }
+
+.title {
+    opacity: 1;
+    position: absolute;
+    top: 60px; left: 40px;
+}
+
+.form {
+    opacity: 1;
+    position: absolute;
+    top: 180px; left: 40px;
+    width: 200px;
+    height: 200px;
+}
+
+.boton {
+    --ion-text-color:  #ffffff;
+    position: absolute;
+    top: 220px; left: 25px;
+    width: 220px;
+    height: 40px;
+}
+
+.input1 {
+    --ion-item-background: #ffffff;
+    --ion-text-color: #0c0c0c;
+    position: absolute;
+    top: 180px; left: 30px;
+    width: 220px;
+    height: 40px;
+}
+
+.volverInicio {
+    position: absolute;
+    top: 280px; left: 90px;
+}

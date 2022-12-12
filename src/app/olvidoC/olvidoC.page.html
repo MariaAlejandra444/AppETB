@@ -6,22 +6,21 @@
 
 <ion-content class="background">
     <ion-card color="light" class="caja-olvidoC">
-        <ion-card-header>
-          <ion-card-title>Recuperar Contraseña</ion-card-title>
-        </ion-card-header>
-      
+    </ion-card>
+      <ion-text>
+        <h1 style="font-size: 25px" color="ligth" class="title">Recuperar Contraseña</h1>
+      </ion-text>
         <ion-card-content>
-          <form action="">
-            <ion-item>
-                <ion-label>E-mail</ion-label>
-                <ion-input></ion-input>
+          <form [formGroup]="ionicForm" (ngSubmit)="submitForm()">
+            <ion-item type="color" value="#ffffff" class="input1" >
+                <ion-input color="ligth" placeholder="Ingresa tú Email" formControlName="email"></ion-input>
             </ion-item>
-            <ion-button>Recuperar Contraseña</ion-button>
+            <ion-button type="submit" class ="boton">Recuperar Contraseña</ion-button>
           </form>
-          <ion-button>Registrate</ion-button>
         </ion-card-content>
-      </ion-card>
-  
+        <ion-text class="volverInicio">
+           <h1 style="font-size: 15px"> <ion-router-link color="dark" [routerLink]="['/login']">Volver a inicio</ion-router-link></h1>
+        </ion-text>
 </ion-content>
 
 <ion-footer>
