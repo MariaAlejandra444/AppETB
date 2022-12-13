@@ -23,6 +23,18 @@ const routes: Routes = [
     path: 'mainJuego',
     loadChildren: () => import('./mainJuego/mainJuego.module').then( m => m.MainJuegoPageModule)
   },
+  {
+    path: 'localizador',
+    loadChildren: () => import('./localizador/localizador.module').then( m => m.LocalizadorPageModule)
+  },
+  {
+  path: 'herramienta',
+  loadChildren: () => import('./herramienta/herramienta.module').then( m => m.HerramientaPageModule)
+  },
+  {
+    path: 'herramienta1',
+    loadChildren: () => import('./herramienta1/herramienta1.module').then( m => m.Herramienta1PageModule)
+  },
 ];
 
 @NgModule({

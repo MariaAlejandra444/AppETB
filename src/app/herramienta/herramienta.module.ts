@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { LocalizadorPageRoutingModule } from './localizador-routing.module';
+import { HerramientaPageRoutingModule } from './herramienta-routing.module';
 
-import { LocalizadorPage } from './localizador.page';
+import { HerramientaPage } from './herramienta.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    LocalizadorPageRoutingModule
+    HerramientaPageRoutingModule
   ],
-  declarations: [LocalizadorPage]
+  declarations: [HerramientaPage]
 })
-export class LocalizadorPageModule {}
+export class HerramientaPageModule {}
