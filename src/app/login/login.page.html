@@ -12,20 +12,29 @@
       <ion-icon name="key" class="logo4"></ion-icon>
       <ion-icon name="person" class="logo5"></ion-icon>
       <ion-text>
-        <h1 style="font-size: 50px" color="ligth" class="title">ETB</h1>
+        <h1 style="font-size: 40px" color="ligth" class="title">ETB</h1>
       </ion-text>
-      <h1 style="font-size: 30px" color="ligth" class="subtitle">Encourage de best</h1>
+      <h1 style="font-size: 20px" color="ligth" class="subtitle">Encourage de best</h1>
     </ion-card-header>
     <ion-card-content>
-      <form [formGroup]="formularioLogin">
-        <ion-item class="form" type="color" value="#ffffff">
-          <ion-input  color="ligth" placeholder="Usuario" formControlName="nombre"></ion-input>
+      <form [formGroup]="ionicForm" (ngSubmit)="submitForm()">
+        <ion-item class="form" type="color" value="#ffffff" class="input1" >
+          <ion-input color="ligth" placeholder="Usuario" formControlName="nombre" style="font-size: 15px"></ion-input>
         </ion-item>
-        <ion-item class="form1" type="color" value="#ffffff">
-          <ion-input  color="ligth" placeholder="Contraseña" formControlName="nombre"></ion-input>
+        <ion-item class="form1" type="color" value="#ffffff"  class="input2">
+          <ion-input  color="ligth" placeholder="Contraseña" formControlName="password" style="font-size: 15px" type="password"></ion-input>
         </ion-item>
+        <ion-row>
+          <ion-col>
+            <ion-button type="submit" color="secondary" expand="block" class="boton" >Enviar</ion-button>
+          </ion-col>
+        </ion-row>
       </form>
     </ion-card-content>
+    <ion-text>
+      <h1 style="font-size: 15px" color="ligth" class="registro">No tienes una cuenta? <ion-router-link color="secondary" [routerLink]="['/registro']">Registrarse</ion-router-link> <br>
+        <ion-router-link color="secondary" [routerLink]="['/olvidoC']">¿Olvidaste tu contraseña?</ion-router-link> </h1>
+    </ion-text>
  
 
 </ion-content>

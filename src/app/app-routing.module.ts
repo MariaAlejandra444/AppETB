@@ -16,6 +16,19 @@ const routes: Routes = [
     loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
   },
   {
+    path: 'home1',
+    loadChildren: () => import('./home1/home1.module').then( m => m.Home1PageModule)
+  },
+  {
+    path: 'home2',
+    loadChildren: () => import('./home2/home2.module').then( m => m.Home2PageModule)
+  },
+  {
+    path: 'game',
+    loadChildren: () => import('./game/game.module').then( m => m.GamePageModule)
+  },
+
+  {
     path: 'olvidoC',
     loadChildren: () => import('./olvidoC/olvidoC.module').then( m => m.OlvidoCPageModule)
   },
