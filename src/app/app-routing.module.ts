@@ -35,7 +35,23 @@ const routes: Routes = [
   {
     path: 'mainJuego',
     loadChildren: () => import('./mainJuego/mainJuego.module').then( m => m.MainJuegoPageModule)
+  },  {
+    path: 'quest1',
+    loadChildren: () => import('./games/quest1/quest1.module').then( m => m.Quest1PageModule)
   },
+  {
+    path: 'quest2',
+    loadChildren: () => import('./games/quest2/quest2.module').then( m => m.Quest2PageModule)
+  },
+  {
+    path: 'quest3',
+    loadChildren: () => import('./games/quest3/quest3.module').then( m => m.Quest3PageModule)
+  },
+  {
+    path: 'quest4',
+    loadChildren: () => import('./games/quest4/quest4.module').then( m => m.Quest4PageModule)
+  },
+
   
 ];
 

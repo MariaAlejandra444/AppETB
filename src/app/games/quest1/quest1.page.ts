@@ -1,17 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import { PreguntasService } from '../services/preguntas.service';
+import { PreguntasService } from '../../services/preguntas.service';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-game',
-  templateUrl: './game.page.html',
-  styleUrls: ['./game.page.scss'],
+  selector: 'app-quest1',
+  templateUrl: './quest1.page.html',
+  styleUrls: ['./quest1.page.scss'],
 })
-export class GamePage implements OnInit {
+export class Quest1Page {
 
   Items:any;
   pregunta : any;
+  respuesta1 : any;
+  respuesta2 : any;
+  respuesta3 : any;
+  respuestaCorrecta: any;
   
 
   constructor(public proveedor : PreguntasService,private router :Router,private alertController: AlertController) { }
@@ -23,7 +27,10 @@ export class GamePage implements OnInit {
     this.proveedor.loadInfo('1').then(data=>{
       this.Items = data;
       this.pregunta =this.Items.cuestionario.pregunta;
-      console.log(this.pregunta);
+      this.respuesta1=this.Items.cuestionario.respuestaLetra[0].respuesta;
+      this.respuesta2=this.Items.cuestionario.respuestaLetra[1].respuesta;
+      this.respuesta3=this.Items.cuestionario.respuestaLetra[2].respuesta;
+      console.log(this.Items);
     }).catch(data=>{
       console.log(data);
 
@@ -40,7 +47,4 @@ export class GamePage implements OnInit {
 
     await alert.present();
   }
-
-
-
 }

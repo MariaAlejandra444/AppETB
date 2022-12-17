@@ -20,16 +20,16 @@ export class RegistroPage {
   ionicForm: FormGroup;
 
   dataLogin = {
-  nombre:'',
-  apellido:'',
-  email:'',
-  contrasena:''
+  nombreUsr:'',
+  idUsr:'',
+  emailUsr:'',
+  passUsr:''
   }
 
   constructor(public fb: FormBuilder,public proveedor : RegistroService,private router :Router,private alertController: AlertController) {
     this.ionicForm = this.fb.group({
       'nombre': new FormControl("",Validators.required),
-      'apellido': new FormControl("",Validators.required),
+      'cedula': new FormControl("",Validators.required),
       'email': new FormControl("",Validators.required),
       'contrasena': new FormControl("",Validators.required)
 
@@ -38,7 +38,7 @@ export class RegistroPage {
 
    submitForm() {
     this.dataLogin =this.ionicForm.value;
-    console.log('datalogin es: '+ this.dataLogin.email);
+    console.log('datalogin es: '+ this.dataLogin);
     this.loadInfo();
   }
 
@@ -56,14 +56,14 @@ export class RegistroPage {
   loadInfo(){
     this.proveedor.loadInfo(this.dataLogin).then(data=>{
         this.Items = data;
-        console.log(this.Items.status.id);
-        if(this.Items.status.id== "ok"){
+        console.log(this.Items);
+        /*if(this.Items.status.id== "ok"){
           this.router.navigate(['/home1'])
         }
         else{
           this.presentAlert();
 
-        }
+        }*/
     }).catch(data=>{
       console.log(data);
 

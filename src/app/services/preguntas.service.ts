@@ -4,14 +4,15 @@ import { HttpClient, HttpHeaders ,HttpRequest } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class RegistroService {
+export class PreguntasService {
 
   constructor(public http: HttpClient) { }
-  loadInfo(parameters: { nombreUsr: string; idUsr:string; emailUsr: string; passUsr: string }){
+
+  loadInfo(id: string){
     const headers = {};
-    var api_url="http://localhost:7001/WsEtbMobile-web/webresources/ETB/createUsr/";
+    var api_url="http://localhost:7001/WsEtbMobile-web/webresources/ETB/findAllCuestionario/"+id;
     return new Promise(resolve => {
-      this.http.post(api_url,parameters,headers).subscribe(data => {
+      this.http.get(api_url).subscribe(data => {
         resolve(data);
       }, err =>{
         console.log(err);

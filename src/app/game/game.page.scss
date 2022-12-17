@@ -1,0 +1,25 @@
+ion-content.background{
+  --background: url('https://i.pinimg.com/originals/ec/5c/1d/ec5c1d4bca838ce71734c074d81d270f.gif') 0 0/100% 100% repeat;
+}
+
+.boton1{
+  --background: #e20775;
+  color: rgb(248, 244, 244); //Color de letra
+  font-family: "serif";
+  margin-top: 1em;
+  position: Fixed;
+  top: 380px; left: 25px;
+  height: 42px;
+  width: 230px;
+}
+
+.boton2{
+  --background: #7f75b9;
+  color: rgb(14, 13, 13); //Color de letra
+  font-family: "serif";
+  margin-top: 1em;
+  position: Fixed;
+  top: 430px; left: 15px;
+  height: 42px;
+  width: 250px;
+}

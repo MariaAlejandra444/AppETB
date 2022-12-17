@@ -26,6 +26,10 @@ export class LoginPage {
   password: ''
   }
 
+  dataLogin1 = {
+    nombre: ''
+    }
+
   constructor(public fb: FormBuilder,public proveedor : RestService, private router :Router,private alertController: AlertController) {
     this.ionicForm = this.fb.group({
       'nombre': new FormControl("",Validators.required),
@@ -34,11 +38,11 @@ export class LoginPage {
 
   }
 
-  async presentAlert() {
+  async presentAlert(encabezado: string,mensaje1: string,mensaje2: string) {
     const alert = await this.alertController.create({
-      header: 'Alert',
-      subHeader: 'Usuario o contraseña incorrecta',
-      message: 'Debe registrarse',
+      header: encabezado,
+      subHeader: mensaje1,
+      message: mensaje2,
       buttons: ['OK'],
     });
 
@@ -52,14 +56,18 @@ export class LoginPage {
   }
 
   loadInfo(){
-    this.proveedor.loadInfo(this.dataLogin).then(data=>{
+    this.proveedor.loadInfo(this.dataLogin.nombre).then(data=>{
         this.Items = data;
-        console.log(this.Items.status.id);
-        if(this.Items.status.id== "ok"){
-          this.router.navigate(['/home1'])
+        console.log(this.Items);
+        if(this.Items.response.messageCode == 'OK'){
+          if(this.Items.usuarios.passUsr == this.dataLogin.password){
+            this.router.navigate(['/home1'])
+          }else{
+            this.presentAlert('ERROR','contraseña incorrecta','Verifique la información');
+          }
         }
         else{
-          this.presentAlert();
+          this.presentAlert('ERROR','Usuario no existe','Debe registrarse');
 
         }
     }).catch(data=>{
