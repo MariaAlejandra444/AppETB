@@ -36,9 +36,9 @@ ion-content.ion-padding{
     height: 250px;
 }
 .imgs {
-    height: 30%;
+    height: 35%;
     position: absolute;
-    top:160px; left: 40px;
+    top:150px; left: 25px;
 
 }
 .title {
@@ -48,7 +48,12 @@ ion-content.ion-padding{
 }
 .message {
     position: absolute;
-    top: 30px; left: 30px;
+    top: 30px; left: 1px;
+}
+.title2 {
+    color: #09aeae ;
+    position: absolute;
+    top:-10px; left: 20px;
 }
 ion-button {
   --background: #98a19d;
