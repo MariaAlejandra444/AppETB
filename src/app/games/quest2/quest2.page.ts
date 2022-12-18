@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PreguntasService } from '../../services/preguntas.service';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
+import { RespuestaPreguntaService } from '../../services/respuesta-pregunta.service';
 
 
 @Component({
@@ -16,9 +17,14 @@ export class Quest2Page implements OnInit {
   respuesta1 : any;
   respuesta2 : any;
   respuestaCorrecta: any;
+
+  dataLogin = {
+    idPregunta:0, 
+    letraUsr: ''
+    }
   
 
-  constructor(public proveedor : PreguntasService,private router :Router,private alertController: AlertController) { }
+  constructor(public proveedor : PreguntasService,public proveedor1 : RespuestaPreguntaService,private router :Router,private alertController: AlertController) { }
 
   ngOnInit() {
     this.loadInfo();
@@ -45,5 +51,26 @@ export class Quest2Page implements OnInit {
     });
 
     await alert.present();
+  }
+
+  tomarRespuesta(letra: string){
+
+    
+    this.dataLogin={idPregunta:2,letraUsr:letra};
+    console.log(this.dataLogin);
+   this.proveedor1.loadInfo1(this.dataLogin).then(data=>{
+      this.Items = data;
+      console.log(this.Items.resultadoUsr);
+      if(this.Items.resultadoUsr=='Respuesta Correcta'){
+        this.router.navigate(['/pagina-ok2'])
+      }
+      else{
+        this.router.navigate(['/pagina-mal2'])
+
+      }
+     }).catch(data=>{
+    console.log(data);
+
+  })  
   }
 }

@@ -13,9 +13,14 @@
               Iniciar juego
             </ion-label>
           </ion-item>
-          <ion-item [routerLink]="['/login']">
+          <ion-item [routerLink]="['/consulta']">
             <ion-label style="font-size: 15px">
               Herramienta de consulta
+            </ion-label>
+          </ion-item>
+          <ion-item [routerLink]="['/localizador']">
+            <ion-label style="font-size: 15px">
+              Busca un amigo cercano para ayuda
             </ion-label>
           </ion-item>
           <ion-item [routerLink]="['/login']">
@@ -44,8 +49,8 @@
           <h1 style="font-size: 25px" color="ligth" class="title">Bienvenido a ETB</h1>
         </ion-text>
         <ion-text style="font-size: 13px" class="message">
-          En esta página web encontrarás <br> algunos <ion-text color="secondary">Juegos</ion-text> y <ion-text color="secondary">herramientas de</ion-text> <br>
-          <ion-text color="secondary">consulta</ion-text> con los cuales puedas <br> reforzar  tús habilidades
+          En esta página web encontrarás <br> algunos <ion-router-link color="secondary" [routerLink]="['/game']">Juegos</ion-router-link> y <ion-router-link color="secondary" [routerLink]="['/registro']">Herramientas <br>
+          consulta</ion-router-link> con los cuales puedas <br> reforzar  tús habilidades
         </ion-text>
       </ion-content>
   </div>

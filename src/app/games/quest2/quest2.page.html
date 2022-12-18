@@ -6,13 +6,9 @@
         <img src="https://www.redeszone.net/app/uploads-redeszone.net/2020/12/Spliter-triple.png" class="imagen">
     </ion-card-content>
     <ion-content class="botones">
-        <ion-button class="btn" id="btn1">{{respuesta1}}</ion-button>
-        <ion-button class="btn" id="btn2">{{respuesta2}}</ion-button>
+        <ion-button class="btn" id="btn1" (click) = "tomarRespuesta('A')">{{respuesta1}}</ion-button>
+        <ion-button class="btn" id="btn2" (click) = "tomarRespuesta('B')">{{respuesta2}}</ion-button>
     </ion-content>
-    <ion-button [routerLink]="['/quest3']" class="btnSig" >
-        Siguiente
-        <ion-icon slot="end" name="star"></ion-icon>
-    </ion-button>
 </ion-content>
    
     
