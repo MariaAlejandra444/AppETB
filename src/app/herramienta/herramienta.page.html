@@ -42,32 +42,38 @@
     </ion-header>
     <ion-content class="ion-padding" >
       <div class="verticalLine"></div>
-
-      <ion-card color="light" class="cardconteudo">
-        <ion-card-header>
-          <ion-card-title>Heramienta de Consulta</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-          <ion-grid>
-            <ion-row>
-              <ion-col sizeLg="4" sizeMd="4" sizeXs="6">
-                <div class="icon"></div>
-                <ion-text>Equipos</ion-text>
-                <img src="https://media.discordapp.net/attachments/941137936093675593/1052041320195174400/equipos.png" alt="equipos" [routerLink]="['/herramienta1']">
-              </ion-col>
-              <ion-col sizeLg="4" sizeMd="4" sizeXs="6">
-                <div class="icon"></div>
-                <ion-text>Servicios</ion-text>
-                <img src="https://media.discordapp.net/attachments/941137936093675593/1052041288825962556/servicios.jpg" alt="servicios" [routerLink]="['/herramienta2']">   
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-          
-    
-          
-           
-        </ion-card-content>
+      <ion-card class="cardconteudo">
       </ion-card>
+      <ion-text>
+        <h1 style="font-size: 25px" color="ligth" class="title">Heramienta de Consulta</h1>
+      </ion-text>
+      <ion-grid >
+        <ion-row class="listado">
+          <!--Chip1-->
+          <ion-chip [routerLink]="['/herramienta1']">
+            <ion-avatar>
+              <img alt="equipos" src="https://media.discordapp.net/attachments/941137936093675593/1052041320195174400/equipos.png" />
+            </ion-avatar>
+            <ion-label>Equipos</ion-label>
+            <ion-icon name="caret-forward-circle-outline"></ion-icon>
+          </ion-chip>
+          <!--Chip2-->
+          <ion-chip [routerLink]="['/herramienta2']">
+            <ion-avatar>
+              <img alt="servicios" src="https://media.discordapp.net/attachments/941137936093675593/1052041288825962556/servicios.jpg" />
+            </ion-avatar>
+            <ion-label>Servicios</ion-label>
+            <ion-icon name="caret-forward-circle-outline"></ion-icon>
+          </ion-chip>
+       
+
+        </ion-row>
+      </ion-grid>
+      
+
+      
+
+      
 
       
       
