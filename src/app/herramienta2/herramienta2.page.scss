@@ -21,34 +21,33 @@ ion-content.ion-padding{
   item-background-color{
     background-color: rgb(192, 192, 192);
 }
-.title1 {
-    opacity: 1;
-    position: absolute;
-    top: 20px; left: 20px;
-}
-// estilos en ion card
-.slide-1 {
+
+.cardconteudo {
     background-color: rgb(192, 192, 192);
     justify-content: center;
     position: absolute;
-    top: 50px; left: 10px;
+    top: 100px; left: 10px;
     width: 85%;
-    height: 250px;
+    height: 180px;
+    opacity: 0.5;
 }
-.imgs {
-    height: 30%;
-    position: absolute;
-    top:160px; left: 40px;
 
-}
 .title {
-    color: #09aeae ;
+    opacity: 1;
     position: absolute;
-    top:-10px; left: 40px;
+    top: 100px; left: 40px;
 }
+
+.title1 {
+  opacity: 1;
+  position: absolute;
+  top: 20px; left: 20px;
+}
+
 .message {
+    opacity: 1;
     position: absolute;
-    top: 30px; left: 30px;
+    top: 170px; left: 30px;
 }
 ion-button {
   --background: #98a19d;
@@ -94,7 +93,3 @@ ion-button {
     position: relative;
     margin-left: 10%;
   }
-
-ion-slides {
-    height: 100%;
-}

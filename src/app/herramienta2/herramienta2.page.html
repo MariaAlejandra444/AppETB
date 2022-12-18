@@ -1,5 +1,4 @@
 <ion-app>
-  <!--Menu-->
   <ion-menu contentId="main-content">
     <ion-header>
       <ion-toolbar color="tertiary">
@@ -28,62 +27,28 @@
       </ion-list>
     </ion-content>
   </ion-menu>
-  <!--END Menu-->
-
-  <!--Page-->
   <div class="ion-page" id="main-content">
     <ion-header>
       <ion-toolbar>
         <ion-buttons slot="start">
           <ion-menu-button></ion-menu-button>
         </ion-buttons>
-        <ion-title style="font-size: 13px" class="title1"> Encourage the best-ETB</ion-title>
+        <ion-title style="font-size: 13px" class="title1">Encourage the best-ETB</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content class="ion-padding" >
       <div class="verticalLine"></div>
-
-      <ion-card color="light" class="cardconteudo">
-        <ion-card-header>
-          <ion-card-title>Heramienta de Consulta</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-          <ion-grid>
-            <ion-row>
-              <ion-col sizeLg="4" sizeMd="4" sizeXs="6">
-                <div class="icon"></div>
-                <ion-text>Equipos</ion-text>
-                <img src="https://media.discordapp.net/attachments/941137936093675593/1052041320195174400/equipos.png" alt="equipos" [routerLink]="['/herramienta1']">
-              </ion-col>
-              <ion-col sizeLg="4" sizeMd="4" sizeXs="6">
-                <div class="icon"></div>
-                <ion-text>Servicios</ion-text>
-                <img src="https://media.discordapp.net/attachments/941137936093675593/1052041288825962556/servicios.jpg" alt="servicios" [routerLink]="['/herramienta2']">   
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-          
-    
-          
-           
-        </ion-card-content>
+      <ion-card class="cardconteudo">
       </ion-card>
-
-      
-      
-      
-      
-     
-       
-        
+        <ion-text>
+          <h1 style="font-size: 25px" color="ligth" class="title">Bienvenido a ETB</h1>
+        </ion-text>
+        <ion-text style="font-size: 13px" class="message">
+          En esta página web encontrarás <br> algunos <ion-text color="secondary">Juegos</ion-text> y <ion-text color="secondary">herramientas de</ion-text> <br>
+          <ion-text color="secondary">consulta</ion-text> con los cuales puedas <br> reforzar  tús habilidades
+        </ion-text>
       </ion-content>
-
-      
-
   </div>
-  <!--END Page-->
-
   <div class="verticalLine1"></div>
-  
-
+  <ion-button>iniciar test</ion-button>
 </ion-app>

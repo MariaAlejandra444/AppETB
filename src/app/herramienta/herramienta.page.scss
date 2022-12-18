@@ -1,7 +1,6 @@
 
-
 ion-content.ion-padding{
-  --background: url('https://media.discordapp.net/attachments/941137936093675593/1051658600654839828/tm-astro-bg.jpg?width=1894&height=1065') 0 0/100% 100% no-repeat;
+  --background: url('../../../src/images/tm-astro-bg.jpg') 0 0/100% 100% no-repeat;
 }
 
 .title{
@@ -29,7 +28,7 @@ item-background-color{
   position: absolute;
   top: 100px; left: 10px;
   width: 85%;
-  
+  height: 180px;
   opacity: 0.5;
 }
 
@@ -93,8 +92,4 @@ top: 450px; left: 80px;
   margin-top: 0;
   position: relative;
   margin-left: 10%;
-}
-
-.icon {
-  align-items: center;
 }

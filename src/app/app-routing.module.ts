@@ -48,6 +48,10 @@ const routes: Routes = [
     path: 'herramienta1',
     loadChildren: () => import('./herramienta1/herramienta1.module').then( m => m.Herramienta1PageModule)
   },
+  {
+    path: 'herramienta2',
+    loadChildren: () => import('./herramienta2/herramienta2.module').then( m => m.Herramienta2PageModule)
+  },
 ];
 
 @NgModule({
