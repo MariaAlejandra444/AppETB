@@ -100,11 +100,33 @@ const routes: Routes = [
     path: 'pagina-mal6',
     loadChildren: () => import('./paginas-mal/pagina-mal6/pagina-mal6.module').then( m => m.PaginaMal6PageModule)
   },
- 
   {
+    path: 'consulta',
+    loadChildren: () => import('./consulta/consulta.module').then( m => m.ConsultaPageModule)
+  },  {
     path: 'map',
     loadChildren: () => import('./map/map.module').then( m => m.MapPageModule)
   },
+<<<<<<< HEAD
+  {
+    path: 'localizador',
+    loadChildren: () => import('./localizador/localizador.module').then( m => m.LocalizadorPageModule)
+  },
+  {
+  path: 'herramienta',
+  loadChildren: () => import('./herramienta/herramienta.module').then( m => m.HerramientaPageModule)
+  },
+  {
+    path: 'herramienta1',
+    loadChildren: () => import('./herramienta1/herramienta1.module').then( m => m.Herramienta1PageModule)
+  },
+  {
+    path: 'herramienta2',
+    loadChildren: () => import('./herramienta2/herramienta2.module').then( m => m.Herramienta2PageModule)
+  },
+];
+=======
+>>>>>>> aleja
 
 
 

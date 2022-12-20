@@ -8,11 +8,15 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { RestService } from './services/rest.service';
+//IMPORTAMOS GEOLOCATION Y GEOCODER
+import { Geolocation } from '@ionic-native/geolocation/ngx';
+import { NativeGeocoder } from '@ionic-native/native-geocoder/ngx';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy},RestService,Geolocation],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy},RestService,Geolocation,    
+    NativeGeocoder],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
