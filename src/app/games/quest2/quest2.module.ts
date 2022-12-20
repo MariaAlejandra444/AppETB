@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { LocalizadorPageRoutingModule } from './localizador-routing.module';
+import { Quest2PageRoutingModule } from './quest2-routing.module';
 
-import { LocalizadorPage } from './localizador.page';
+import { Quest2Page } from './quest2.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    LocalizadorPageRoutingModule
+    Quest2PageRoutingModule
   ],
-  declarations: [LocalizadorPage]
+  declarations: [Quest2Page]
 })
-export class LocalizadorPageModule {}
+export class Quest2PageModule {}

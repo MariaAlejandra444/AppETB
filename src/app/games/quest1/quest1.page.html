@@ -1,0 +1,18 @@
+<ion-content class="background">
+
+<p style="font-size: 15px" color="ligth" class="volver"><ion-router-link color="secondary" [routerLink]="['/home1']"><ion-icon name="arrow-back"></ion-icon>Volver a pantalla principal</ion-router-link> </p>
+    <ion-card-content class="contenedor">
+        <h1>{{pregunta}}</h1>
+        <img src="https://www.adslzone.net/app/uploads-adslzone.net/2021/09/fibra-optica-1.jpg" class="imagen">
+    </ion-card-content>
+    <ion-content class="botones">
+        <ion-button class="btn" id="btn1" (click) = "tomarRespuesta('A')">{{respuesta1}}</ion-button>
+        <ion-button class="btn" id="btn2" (click) = "tomarRespuesta('B')">{{respuesta2}}</ion-button>
+        <ion-button class="btn" id="btn3" (click) = "tomarRespuesta('C')">{{respuesta3}}</ion-button>
+    </ion-content>
+</ion-content>
+
+   
+    
+
+

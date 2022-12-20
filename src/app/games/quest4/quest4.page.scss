@@ -1,0 +1,131 @@
+
+ion-content.background{
+    --ion-background-color:#eb7db0;
+}
+
+h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+    position: absolute;
+    top: 7px;
+    left: 20px;
+    opacity: 1;
+    color: black;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 10%;
+      width: 90%;
+    }
+  }
+
+  .contenedor{
+    background-color: cornsilk;
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    opacity: 1;
+    width: 89%;
+    height: 60px;
+  }
+  .btn{
+    --background: rgb(32, 178, 223);
+    width: 100%;
+    height: 40px;
+    
+  }
+  .volver{
+    --background: rgb(32, 178, 223);
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    height: 20px;
+    
+  }
+  .btn:hover{
+    --background: rgb(223, 134, 32);
+    cursor:pointer;
+   
+  }
+  .btn1:hover{
+    --background: rgb(223, 134, 32);
+    cursor:pointer;
+   
+  }
+
+  .btn1{
+    position: absolute;
+    --background: #eb7db0;
+    font-size: 7px;
+    top: 190px;
+    left: 1px;
+    width: 130px;
+    height: 100px;
+    text-align: left;
+  }
+  .btn2:hover{
+    --background: rgb(223, 134, 32);
+    cursor:pointer;
+   
+  }
+
+  .btn2{
+    position: relative;
+    font-size: 7px;
+    --background: #eb7db0;
+    top: 190px;
+    left: 140px;
+    width: 130px;
+    height: 100px;
+    text-align: left;
+  }
+
+  .btn3:hover{
+    --background: rgb(223, 134, 32);
+    cursor:pointer;
+   
+  }
+
+  .btn3{
+    position: relative;
+    font-size: 7px;
+    --background: #eb7db0;
+    top: 320px;
+    left: -133px;
+    width: 130px;
+    height: 100px;
+    text-align: left;
+  }
+
+  .btn4:hover{
+    --background: rgb(223, 134, 32);
+    cursor:pointer;
+   
+  }
+
+  .btn4{
+    position: relative;
+    font-size: 7px;
+    --background: #eb7db0;
+    top: 215px;
+    left: 138px;
+    width: 130px;
+    height: 100px;
+    text-align: left;
+  }
+  
+  
+  .btnSig{
+    position: absolute;
+    top: 510px;
+    left: 1px;
+    width: 100%;
+    height: 50px;
+   
+  }

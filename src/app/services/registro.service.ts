@@ -7,9 +7,9 @@ import { HttpClient, HttpHeaders ,HttpRequest } from '@angular/common/http';
 export class RegistroService {
 
   constructor(public http: HttpClient) { }
-  loadInfo(parameters: { nombre: string; apellido: string; email: string; contrasena: string }){
+  loadInfo(parameters: { nombreUsr: string; idUsr:string; emailUsr: string; passUsr: string }){
     const headers = {};
-    var api_url="http://localhost:3000/createUsr";
+    var api_url="http://localhost:7001/WsEtbMobile-web/webresources/ETB/createUsr/";
     return new Promise(resolve => {
       this.http.post(api_url,parameters,headers).subscribe(data => {
         resolve(data);

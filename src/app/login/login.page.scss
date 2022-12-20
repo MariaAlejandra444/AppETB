@@ -28,7 +28,7 @@ ion-content.background{
 
 .registro {
     opacity: 1;
-    position: absolute;
+    position: relative;
     top: 420px; left: 30px;
 }
 
@@ -112,7 +112,7 @@ ion-content.background{
 .boton {
     --ion-text-color:  #ffffff;
     position: absolute;
-    top: 345px; left: 75px;
+    top: 345px; left: 90px;
     width: 80px;
     height: 40px;
 }

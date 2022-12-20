@@ -1,0 +1,19 @@
+<ion-content class="background">
+  <p style="font-size: 15px" color="ligth" class="volver"><ion-router-link color="secondary" [routerLink]="['/home1']"><ion-icon name="arrow-back"></ion-icon>Volver a pantalla principal</ion-router-link> </p>
+      <ion-card-content class="contenedor">
+          <h1>{{pregunta}}</h1>
+      </ion-card-content>
+          <ion-button class="btn1" id="btn1" (click) = "tomarRespuesta('A')">
+            <img src="https://us.123rf.com/450wm/olivier26/olivier261805/olivier26180500014/olivier26180500014.jpg?ver=6" title="{{respuesta1}}">
+          </ion-button>
+          <ion-button class="btn2" id="btn2" (click) = "tomarRespuesta('B')">
+            <img src="https://static3.elcorreo.com/www/pre2017/multimedia/RC/201612/07/media/cortadas/fibra-optica-kZhC-U21522580746eUD-575x323@RC.jpg" title="{{respuesta2}}">
+          </ion-button>
+          <ion-button class="btn3" id="btn3" (click) = "tomarRespuesta('C')">
+            <img src="https://silexfiber.com/wp-content/uploads/2021/09/Armario-FTTH-Paneles-ORSM-288FO-v02.jpg" title="{{respuesta3}}">
+          </ion-button>
+          <ion-button class="btn4" id="btn4" (click) = "tomarRespuesta('D')">
+            <img src="http://pm1.narvii.com/6849/cf174c025b8f69c891729f0e8cbeed11e81f4745v2_00.jpg" title="{{respuesta4}}">
+          </ion-button>
+      </ion-content>
+  

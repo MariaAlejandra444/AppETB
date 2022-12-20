@@ -8,11 +8,14 @@ export class RestService {
 
   constructor(public http: HttpClient) { }
 
-loadInfo(parameters: { nombre: string; password: string; }){
-  const headers = {};
-  var api_url="http://localhost:3000/login";
+loadInfo(id: string){//parameters: { nombre: string}){
+  console.log(id);
+  const headers = {}
+  
+  var api_url="http://localhost:7001/WsEtbMobile-web/webresources/ETB/findByIdUsr/"+id;
+  console.log("esta es la url : "+api_url)
   return new Promise(resolve => {
-    this.http.post(api_url,parameters,headers).subscribe(data => {
+    this.http.get(api_url,headers).subscribe(data => {
       resolve(data);
     }, err =>{
       console.log(err);

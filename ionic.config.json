@@ -1,6 +1,8 @@
 {
   "name": "prueba",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "proxies": [
     {

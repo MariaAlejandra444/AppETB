@@ -1,0 +1,79 @@
+
+ion-content.background{
+    --ion-background-color:#a54398;
+}
+
+h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+    position: static;
+    top: 50px;
+    left: 20px;
+    opacity: 1;
+    color: black;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 10%;
+      width: 90%;
+    }
+  }
+
+  .contenedor{
+    background-color: cornsilk;
+    position: Fixed;
+    top: 100px;
+    left: 20px;
+    opacity: 1;
+    width: 89%;
+    height: 40%;
+  }
+  .imagen{
+    object-fit:cover;
+    width: 100%;
+    position: Fixed;
+    top: 210px;
+    left: 20px;
+    width: 245px;
+    height: 130px;
+  }
+  .btn{
+    --background: rgb(32, 178, 223);
+    width: 100%;
+    height: 40px;
+    
+  }
+  .volver{
+    --background: rgb(32, 178, 223);
+    position: Fixed;
+    top: 30px;
+    left: 20px;
+    height: 20px;
+    
+  }
+  .btn:hover{
+    --background: rgb(223, 134, 32);
+    cursor:pointer;
+    
+  }
+  .botones{
+    position: Fixed;
+    top: 350px;
+    left: 15px;
+    width: 250px;
+    height: 150px;
+  }
+  .btnSig{
+    position: absolute;
+    top: 510px;
+    left: 1px;
+    width: 100%;
+    height: 50px;
+   
+  }
