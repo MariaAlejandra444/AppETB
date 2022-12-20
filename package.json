@@ -34,6 +34,7 @@
     "json-server": "^0.17.1",
     "node": "^19.2.0",
     "rxjs": "~7.5.0",
+    "socket.io": "^4.5.4",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
@@ -93,5 +94,14 @@
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-ionic-keyboard": {}
     }
+  },
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariaAlejandra444/AppETB.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MariaAlejandra444/AppETB/issues"
   }
 }
