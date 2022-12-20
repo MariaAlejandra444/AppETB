@@ -67,7 +67,8 @@ const routes: Routes = [
   {
     path: 'quest5',
     loadChildren: () => import('./games/quest5/quest5.module').then( m => m.Quest5PageModule)
-  },  {
+  },
+  {
     path: 'pagina-ok4',
     loadChildren: () => import('./paginas-ok/pagina-ok4/pagina-ok4.module').then( m => m.PaginaOk4PageModule)
   },
@@ -102,13 +103,13 @@ const routes: Routes = [
   {
     path: 'consulta',
     loadChildren: () => import('./consulta/consulta.module').then( m => m.ConsultaPageModule)
+  },  {
+    path: 'map',
+    loadChildren: () => import('./map/map.module').then( m => m.MapPageModule)
   },
 
 
 
-
-
-  
 ];
 
 @NgModule({
