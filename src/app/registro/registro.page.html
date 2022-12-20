@@ -1,9 +1,58 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>registro</ion-title>
+    <ion-title>registro ETB</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="background">
+  
+  <!--Caja de registro-->
+  <ion-card color="light" class="caja-registro">
+  </ion-card>
+    <ion-card-header>
+      <ion-card-title  class="tituloR">Crear una cuenta</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="content">
+      <form [formGroup]="ionicForm" (ngSubmit)="submitForm()">
+        <ion-icon name="contact" class="icono1"></ion-icon>
+        <ion-item type="color" value="#ffffff" class="input1" >
+            <ion-input color="ligth" placeholder="Nombre" formControlName="nombre"></ion-input>
+        </ion-item>
+        <ion-item type="color" value="#ffffff" class="input2" >
+          <ion-input color="ligth" placeholder="# identificación" formControlName="cedula"></ion-input>
+        </ion-item>
+        <ion-item type="color" value="#ffffff" class="input3" >
+          <ion-input color="ligth" placeholder="Email" formControlName="email"></ion-input>
+        </ion-item>
+        <ion-item type="color" value="#ffffff" class="input4" >
+          <ion-input color="ligth" placeholder="Contraseña" formControlName="contrasena"></ion-input>
+        </ion-item>
+        <ion-button type="submit" class ="boton">Sign Up</ion-button>
+      </form>
+    </ion-card-content>
 
+    <ion-text class="extra-options">
+      <h3 style="font-size: 15px" color="ligth" class="registro"> By signing up, you agree with the <ion-router-link color="secondary" [routerLink]="['/registro']">Terms </ion-router-link>
+        and <ion-router-link color="secondary" [routerLink]="['/olvidoC']">Privacy</ion-router-link> you agree with the <ion-router-link color="secondary" [routerLink]="['/olvidoC']">Terms of Service</ion-router-link>
+      and <ion-router-link color="secondary" [routerLink]="['/olvidoC']">Privacy Policy</ion-router-link></h3>
+    </ion-text>
+      <ion-button class="boton1" [routerLink]="['/login']">Already have an account?
+      </ion-button>
+        
+ 
+
+
+<<<<<<< HEAD
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>
+      Footer
+      <ion-item [routerLink]="['/herramienta']" ></ion-item>
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>
+=======
+</ion-content>
+>>>>>>> aleja

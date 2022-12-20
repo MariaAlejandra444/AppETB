@@ -19,9 +19,30 @@
     "@angular/platform-browser": "^15.0.0",
     "@angular/platform-browser-dynamic": "^15.0.0",
     "@angular/router": "^15.0.0",
+    "@capacitor-community/capacitor-googlemaps-native": "^1.2.0",
+    "@capacitor/android": "^4.6.1",
+    "@capacitor/core": "^4.6.1",
+<<<<<<< HEAD
+    "@ionic/angular": "^6.4.1",
+=======
+    "@capacitor/geolocation": "^4.1.0",
+    "@googlemaps/js-api-loader": "^1.15.1",
+    "@ionic-native/core": "^5.36.0",
+    "@ionic-native/geolocation": "^5.36.0",
+    "@ionic-native/google-maps": "^5.27.0-beta-20200630",
+    "@ionic-native/native-geocoder": "^5.36.0",
     "@ionic/angular": "^6.1.9",
+>>>>>>> aleja
+    "cors": "^2.8.5",
     "ionicons": "^6.0.3",
+    "json-server": "^0.17.1",
+    "node": "^19.2.0",
     "rxjs": "~7.5.0",
+<<<<<<< HEAD
+    "swiper": "^8.4.5",
+=======
+    "socket.io": "^4.5.4",
+>>>>>>> aleja
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
@@ -35,12 +56,23 @@
     "@angular/compiler": "^15.0.0",
     "@angular/compiler-cli": "^15.0.0",
     "@angular/language-service": "^15.0.0",
+    "@capacitor/cli": "^4.6.1",
     "@ionic/angular-toolkit": "^6.0.0",
     "@ionic/lab": "3.2.15",
     "@types/jasmine": "~4.0.0",
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "5.3.0",
     "@typescript-eslint/parser": "5.3.0",
+    "cordova-browser": "^6.0.0",
+    "cordova-plugin-add-swift-support": "^2.0.2",
+    "cordova-plugin-device": "2.0.2",
+    "cordova-plugin-geolocation": "^4.1.0",
+    "cordova-plugin-googlemaps": "^2.7.1",
+    "cordova-plugin-ionic-keyboard": "^2.0.5",
+    "cordova-plugin-ionic-webview": "^5.0.0",
+    "cordova-plugin-nativegeocoder": "^3.4.1",
+    "cordova-plugin-splashscreen": "5.0.2",
+    "cordova-plugin-statusbar": "^2.4.2",
     "eslint": "^7.6.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsdoc": "30.7.6",
@@ -56,5 +88,28 @@
     "ts-node": "~8.3.0",
     "typescript": "~4.8.4"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-geolocation": {},
+      "cordova-plugin-googlemaps": {
+        "API_KEY_FOR_ANDROID": "(AIzaSyC0XPtWUao9y-OIxJbNT2f01AFAiqlkKEE)"
+      },
+      "cordova-plugin-nativegeocoder": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-ionic-webview": {},
+      "cordova-plugin-ionic-keyboard": {}
+    }
+  },
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariaAlejandra444/AppETB.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MariaAlejandra444/AppETB/issues"
+  }
 }

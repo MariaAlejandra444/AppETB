@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>Olvido Contraseña ETB</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+    <ion-card color="light" class="caja-olvidoC">
+    </ion-card>
+      <ion-text class ="tituloR">
+        <h1 style="font-size: 25px" class="title">Recuperar Contraseña</h1>
+      </ion-text>
+        <ion-card-content>
+          <form [formGroup]="ionicForm" (ngSubmit)="submitForm()">
+            <ion-item type="color" value="#ffffff" class="input1" >
+                <ion-input color="ligth" placeholder="Ingresa tú Email" formControlName="email"></ion-input>
+            </ion-item>
+            <ion-button type="submit" class ="boton">Recuperar Contraseña</ion-button>
+          </form>
+        </ion-card-content>
+        <ion-text class="volverInicio">
+           <h1 style="font-size: 15px"> <ion-router-link color="dark" [routerLink]="['/login']">Volver a inicio</ion-router-link></h1>
+        </ion-text>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>
+      Footer
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>

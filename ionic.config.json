@@ -1,5 +1,13 @@
 {
   "name": "prueba",
-  "integrations": {},
-  "type": "angular"
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "proxies": [
+    {
+      "path": "/login",
+      "proxyUrl": "http://localhost:3000"
+    }
+  ]
 }
